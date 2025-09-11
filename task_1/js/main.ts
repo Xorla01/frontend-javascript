@@ -30,6 +30,12 @@ const director1: Directors = {
   contract: true
 };
 
-console.log(director1);
-console.log(teacher); 
+// Interface for the function
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
 
+// Function implementation
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;
+};
