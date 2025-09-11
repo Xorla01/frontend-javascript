@@ -39,3 +39,29 @@ interface printTeacherFunction {
 const printTeacher: printTeacherFunction = (firstName, lastName) => {
   return `${firstName.charAt(0)}. ${lastName}`;
 };
+
+// Interface for the class methods
+export interface StudentClassInterface {
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+interface StudentConstructor {
+  new (firstName: string, lastName: string): StudentClassInterface;
+}
+
+class StudentClass implements StudentClassInterface {
+  constructor(public firstName: string, public lastName: string) {}
+  
+  workOnHomework(): string {
+    return "Currently working";
+  }
+  displayName(): string {
+    return this.firstName;
+  }
+}
+
+const Student: StudentConstructor = StudentClass;
+
+// CommonJS export
+module.exports = { StudentClass, Student };
