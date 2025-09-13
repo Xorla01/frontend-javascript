@@ -1,7 +1,7 @@
 // Create and export constants for subjects
-export const cpp = new Subjects.Cpp();
-export const java = new Subjects.Java();
-export const react = new Subjects.React();
+const cpp = new Subjects.Cpp();
+const java = new Subjects.Java();
+const react = new Subjects.React();
 
 // Create and export one Teacher object
 export const cTeacher: Subjects.Teacher = {
@@ -46,4 +46,5 @@ Output:
 React
 Here is the list of requirements for React
 No available teacher
+
 */
