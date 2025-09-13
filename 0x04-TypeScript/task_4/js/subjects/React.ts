@@ -5,7 +5,7 @@ namespace Subjects {
 
   export class React extends Subjects.subject {
     getRequirements(): string {
-      return "Here is the list of requirements for Cpp";
+      return "Here is the list of requirements for React";
     }
 
     getAvailableTeacher(): string {
@@ -15,4 +15,5 @@ namespace Subjects {
       return `Available Teacher: ${this.teacher.firstName}`;
     }
   }
+
 }
